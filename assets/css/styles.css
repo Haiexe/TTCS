@@ -594,3 +594,176 @@ header .menu .list .list-item .nav-item-link:hover {
 .send-request button:active {
     background-color: var(--secondary-color);
 }
+
+
+/* ==========================COOPERATE============================= */
+.cooparate .body {
+    background-color: var(--main-backGround);
+    position: relative;
+    height: 315px;
+}
+
+.cooparate .co-op {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cooparate .co-op .co-op-item {
+    height: 40px;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cooparate .co-op .co-op-item:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.cooparate .co-op .co-op-item:active div{
+   opacity: 1;
+}
+
+.co-op .co-op-item .bank,
+.co-op .co-op-item .group,
+.co-op .co-op-item .advice{
+    position: absolute;
+    display: flex;
+    left: 90px;
+    top: 60%;
+    opacity: 0;
+}
+
+.co-op .co-op-item .bank {
+    opacity: 1;
+}
+
+/* ======================================FOOTER=================================== */
+.footer {
+    padding: 60px 0 15px;
+    background-color: var(--primary-color);
+}
+
+.footer .body {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer .body .logo i{
+    position: relative;
+    font-size: 120px;
+    color: var(--secondary-color);
+    margin-left: 50px;
+}
+
+.footer .body .logo i p {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.footer .body .info {
+    margin-left: 25px;
+}
+
+.footer .body .info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer .body .info .info-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer .body .regis {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.footer .body .regis h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer .body .regis .regis-line {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer .body .regis input {
+    height: 36px;
+    width: 190px;
+    background-color: #005884;
+    border: none;
+}
+
+.footer .body .regis button {
+    border: none;
+    height: 36px;
+    width: 36px;
+    color: #fff;
+    background-color: #46b8da;
+}
+
+.footer .body .regis button:hover {
+    cursor: pointer;
+    background-color: #00275d;
+}
+
+.footer .body .regis img {
+    height: 75px;
+    width: 200px;
+    margin-top: 16px;
+}
+
+.coppy-right {
+    background-color: var(--primary-color);
+}
+.coppy-right .body {
+    display: flex;
+    align-items: center;
+}
+.coppy-right a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.coppy-right a:last-child {
+    margin-right: 70px;
+}
+
+.coppy-right p {
+    margin-right: auto;
+    margin-left: 70px;
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 400;
+}

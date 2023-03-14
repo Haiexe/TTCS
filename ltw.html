@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1</title>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right,rgb(255, 255, 0), rgb(255, 0, 0));
+            text-align: center;
+        }
+        .color-contain{
+            display: flex;
+            justify-content: center;
+        }
+        div div{
+            border: 5px solid#fff;
+        }
+        .left {
+            height: 20px;
+            width: 80px;
+            background-color: rgb(255, 255, 0);
+        }
+
+        .right {
+            height: 20px;
+            width: 80px;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>BACKGROUND <br> GENERATOR </h1>
+    <div class="color-contain">
+        <div class="left"></div>
+        <div class="right"></div>
+        <button>random</button>
+    </div>
+    
+    
+    <script>
+        const body = document.querySelector('body')
+        const btn = document.querySelector('button')
+        const left = document.querySelector('.left')
+        const right = document.querySelector('.right')
+
+        btn.onclick = function() {
+            const left_color = Math.floor(Math.random()*16000000);
+            const right_color = Math.floor(Math.random()*16000000);
+            console.log(left_color, right_color)
+            left.style.back
+        }
+        
+    </script>
+</body>
+</html>
