@@ -543,6 +543,7 @@ header .menu .list .list-item .nav-item-link:hover {
     font-size: 18px;
     font-weight: 400;
     color: var(--secondary-color);
+    text-align: center;
 }
 
 .send-request h3::after {
@@ -665,6 +666,7 @@ header .menu .list .list-item .nav-item-link:hover {
     font-size: 120px;
     color: var(--secondary-color);
     margin-left: 50px;
+    margin-right: 10px;
 }
 
 .footer .body .logo i p {
@@ -693,6 +695,10 @@ header .menu .list .list-item .nav-item-link:hover {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
+}
+
+.footer .body .info .info-line p {
+    margin-left: 10px;
 }
 
 .footer .body .regis {
@@ -766,4 +772,124 @@ header .menu .list .list-item .nav-item-link:hover {
     color: #fff;
     font-size: 11.5px;
     font-weight: 400;
+}
+
+
+                        /* INTRO PAGE
+                        INTRO PAGE
+                        INTRO PAGE
+                        INTRO PAGE
+                        INTRO PAGE
+                        INTRO PAGE
+                        INTRO PAGE */
+
+
+.intro-page {
+    /* height: 1000px; */
+    background-color: #DDD;
+}
+
+.intro-page .main-content {
+    background-color: var(--main-backGround);
+    height: 100%;
+    display: flex;
+}
+
+.intro-page .body {
+    padding: 20px 0 50px;
+    margin: 0 15px;
+    /* background-color: red; */
+    height: 100%;
+    /* display: flex; */
+    width: 72%;
+}
+
+.intro-page .vision-container p,
+.intro-page .body .intro-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.intro-page .body .intro-content p strong {
+    font-weight: 700;
+}
+
+.intro-page .body .intro-content li {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.intro-page .body .intro-content li a {
+    color: #0000ff;
+}
+
+.intro-page .body .intro-content li strong {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 15px;
+}
+
+.intro-page .body .intro-content ul {
+    list-style: circle;
+}
+
+.intro-page .body .intro-content img {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.intro-page .send-request {
+    width: 25%;
+    margin-left: auto;
+}
+
+.intro-page .send-request input {
+    width: 70%;
+}
+
+.intro-page h2 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.intro-page .intro-list-3 li {
+    font-style: normal;
+    line-height: 27px;
+}
+
+.intro-page .team-member {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.intro-page .team-member .member-item {
+    height: 155px;
+    width: 155px;
+    background-color: var(--primary-color);
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro-page .team-member .member-item .member-name {
+    position: absolute;
+    bottom: -100px;
+}
+
+.intro-page .team-member .member-item img {
+    height: 150px;
+    width: 150px;
+    border-radius: 99px;
+    margin: 0;
+    object-fit: cover;
 }
