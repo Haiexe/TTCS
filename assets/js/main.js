@@ -1,40 +1,20 @@
-// const menuItem = document.querySelectorAll('.menu-item');
-// const list = document.querySelectorAll('.list');
+// NEWS-PAGE 
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
-// menuItem.addEventListener('mouseout', () => {
-//   console.log(list.classList)
-// });
+const tabs = $$('.news-page .tab-new')
+const panes = $$('.news-page .type-news')
+console.log(tabs)
+console.log(panes)
 
+tabs.forEach((tab, index) =>{
+    const pane = panes[index]
+    tab.onclick = function(){
+        $('.tab-new.active-new').classList.remove('active-new')
+        this.classList.add('active-new');
+        
+        $('.type-news.active2').classList.remove('active2')
+        pane.classList.add('active2')
 
-//SLIDESHOW
-
-var slideIndex = 0;
-showSlides(slideIndex);
-
-// Tự động chuyển slide sau mỗi 5 giây
-setInterval(function() { plusSlides(1); }, 7000);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    }
-
-
+})
